@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <html lang="pt-BR">
+
+    </html>
+    <meta charset="utf-8">
+    <title>Revisão HTML</title>
+</head>
+
+<body>
+    <!-- BOA PRÁTICA - INDENTAÇÃO
+Uma prática sempre recomendada, ligada à limpeza e utilizada para facilitar a leitura do código,
+é o uso correto de recuos, ou indentação, no HTML. Costumamos alinhar elementos "irmãos" na
+mesma margem e adicionar alguns espaços ou um tab para elementos "filhos". -->
+
+<!-- VS CODE: Você pode usar o atalho SHIFT + ALT + F como falado, 
+    para identar todo o código ou em situações em que precisa apenas mover parte do código pra direita ou esquerda 
+    você pode selecionar parte do código que necessita alterar e usar TAB pra mover pra direita ou SHIFT + TAB pra mover pra esquerda. -->
+
+    <!-- BOA PRÁTICA - COMENTÁRIOS
+Quando iniciamos nosso projeto, utilizamos poucas tags HTML. Mais tarde adicionaremos uma
+quantidade razoável de elementos, o que pode gerar uma certa confusão. Para manter o código mais
+legível, é recomendada a adição de comentários antes da abertura e após do fechamento de tags
+estruturais (que conterão outras tags). Dessa maneira, nós podemos identificar claramente quando
+um elemento está dentro dessa estrutura ou depois dela. -->
+
+    <!-- início do cabeçalho -->
+    <header>
+        <p>Esse parágrafo está <strong>dentro</strong> do cabeçalho.</p>
+    </header>
+    <!-- fim do cabeçalho -->
+    <p>Esse parágrafo está <strong>depois</strong> do cabeçalho.</p>
+
+
+
+
+
+    <!-- Títulos -->
+    <!-- As tags de heading são para exibir conteúdo de texto e contém 6 níveis, ou seja de <h1> à <h6> ,
+            seguindo uma ordem de importância, sendo <h1> o título principal, o mais importante, e <h6> o título
+            de menor importância.
+            Utilizamos, por exemplo, a tag <h1> para o nome, título principal da página, e a tag <h2> como
+            subtítulo ou como título de seções dentro do documento. -->
+
+    <!-- Obs: a tag <h1> só pode ser utilizada uma vez em cada página porque não pode existir mais de um
+                conteúdo mais importante da página.
+
+                A ordem de importância tem impacto nas ferramentas que processam HTML. As ferramentas de
+                indexação de conteúdo para buscas, como o Google, Bing ou Yahoo! levam em consideração essa ordem
+                e relevância. Os navegadores especiais para acessibilidade também interpretam o conteúdo dessas tags
+                de maneira a diferenciar seu conteúdo e facilitar a navegação do usuário pelo documento. -->
+
+    <h1>MusicDot</h1>
+    <h2>Bem-vindo à MusicDot, seu portal de cursos de música online.</h2>
+
+
+
+
+
+    <!-- Parágrafos -->
+    <!-- Quando exibimos qualquer texto em nossa página, é recomendado que ele seja sempre conteúdo de
+                 alguma tag filha da tag <body> . A marcação mais indicada para textos comuns é a tag de parágrafo: -->
+    <p>
+        A MusicDot é a maior escola online de música em todo o mundo.
+    </p>
+    <p>
+        Nossa matriz fica em Mafra, em Santa Catarina. De lá, saem grande parte das gravações de nossos cursos.
+    </p>
+
+
+
+
+
+    <!-- Marcações de ênfase -->
+    <!-- exibe o texto dentro da tag <strong> em negrito -->
+    <!-- o texto dentro da tag <em> em itálico. -->
+    <!-- as tags <b> e <i> , que atingem o mesmo resultado visualmente,
+                        mas as tags <strong> e <em> são mais indicadas por definirem nossa intenção de significado ao conteúdo, 
+                            mais do que uma simples indicação visual. -->
+    <p>Aprenda de um jeito rápido e barato na <strong>MusicDot</strong>.</p>
+
+
+
+
+
+    <!-- IMAGENS -->
+    <!-- O src é
+            um atributo obrigatório para exibir a imagem e aponta para a sua localização (pode ser um local do seu
+            computador ou um endereço na Web), já o alt é um texto alternativo que aparece caso a imagem
+            não possa ser carregada ou visualizada.
+
+            O atributo alt não é obrigatório, porém é considerado um erro caso seja omitido, pois ele provê o
+            entendimento da imagem para pessoas com deficiência que necessitam o uso de leitores de tela para
+            acessar o computador, e também auxilia na indexação da imagem para motores de busca, como o
+            Google etc. -->
+    <img src="../imagens/casa_de_praia.jpg" alt="Casa de praia">
+
+    <!-- O HTML 5 introduziu duas novas tags específicas para imagem: <figure> e <figcaption> . A
+                tag <figure> define uma imagem em conjunto com a tag <img> . Além disso, permite adicionar uma
+                legenda para a imagem por meio da tag <figcaption> . -->
+    <figure>
+        <img src="img/matriz-musicdot.png" alt="Foto da matriz da musicdot">
+        <figcaption>Matriz da MusicDot</figcaption>
+    </figure>
+</body>
+
+</html>
