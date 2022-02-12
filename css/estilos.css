@@ -1,0 +1,8 @@
+/* Dentro do arquivo estilos.css colocamos apenas o conteúdo do CSS: */
+
+/*seletor*/
+p {
+    /* propriedade: valor; */
+    color: blue;
+    background-color: yellow;
+}

@@ -7,7 +7,53 @@ do HTML - a versão 5, atualmente*. -->
     <!-- O UTF-8 é a recomendação atual para encoding na Web por ser amplamente suportada em
 navegadores e editores de código, além de ser compatível com praticamente todos os idiomas do mundo. -->
     <meta charset="utf-8">
+
     <title>Revisão HTML</title>
+
+    <!-- Arquivo externo -->
+
+    <!-- 
+        A terceira maneira de declararmos os estilos do nosso documento é com um arquivo externo com a
+        extensão .css . Para que seja possível declarar nosso CSS em um arquivo à parte, precisamos indicar
+        em nosso documento HTML uma ligação entre ele e a folha de estilo (arquivo com a extensão .css ).
+
+        Além da melhor organização do projeto, a folha de estilo externa traz ainda as vantagens de manter
+        nosso HTML mais limpo e do reaproveitamento de uma mesma folha de estilos para diversos
+        documentos.
+        
+        A indicação de uso de uma folha de estilos externa deve ser feita dentro da tag <head> de um
+        documento HTML: 
+    -->
+
+    <!-- Inclusão do arquivo CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--  -->
+
+    <!-- Início da tag style -->
+    <style>
+
+    /* O código dentro da tag <style> indica que estamos alterando a cor e o fundo de todos os
+    elementos com tag p . Dizemos que selecionamos esses elementos pelo nome de sua tag, e aplicamos
+    certas propriedades CSS apenas neles. */
+
+    /*seletor*/
+    /* p {
+        /* propriedade: valor; */
+        /* color: blue;
+        background-color: yellow; */
+    /* }
+
+    /* Algumas propriedades contém "subpropriedades" que modificam uma parte específica daquela
+    propriedade que vamos trabalhar, sendo sua sintaxe: */
+
+    /* seletor */
+    p {
+        /* propriedade-subpropriedade: valor; */
+        text-align: center;
+        text-decoration: underline;
+    }
+    </style>
+    <!-- Fim da tag style -->
 </head>
 
 <body> <!-- filha -->
@@ -16,8 +62,8 @@ Uma prática sempre recomendada, ligada à limpeza e utilizada para facilitar a 
 é o uso correto de recuos, ou indentação, no HTML. Costumamos alinhar elementos "irmãos" na
 mesma margem e adicionar alguns espaços ou um tab para elementos "filhos". -->
 
-<!-- VS CODE: Você pode usar o atalho SHIFT + ALT + F como falado, 
-    para identar todo o código ou em situações em que precisa apenas mover parte do código pra direita ou esquerda 
+<!-- VS CODE: Você pode usar o atalho SHIFT + ALT + F como falado,
+    para identar todo o código ou em situações em que precisa apenas mover parte do código pra direita ou esquerda
     você pode selecionar parte do código que necessita alterar e usar TAB pra mover pra direita ou SHIFT + TAB pra mover pra esquerda. -->
 
     <!-- BOA PRÁTICA - COMENTÁRIOS
@@ -56,11 +102,42 @@ um elemento está dentro dessa estrutura ou depois dela. -->
                 indexação de conteúdo para buscas, como o Google, Bing ou Yahoo! levam em consideração essa ordem
                 e relevância. Os navegadores especiais para acessibilidade também interpretam o conteúdo dessas tags
                 de maneira a diferenciar seu conteúdo e facilitar a navegação do usuário pelo documento. -->
-                
-                
+
+
                 <h1><font color="red">MusicDot anos 90</font></h1>
 
     <h2>Bem-vindo à MusicDot, seu portal de cursos de música online.</h2>
+
+    <!-- SINTAXE E INCLUSÃO DE CSS
+    A sintaxe do CSS tem estrutura simples: é uma declaração de propriedades e valores separados por
+    um sinal de dois pontos ":", e cada propriedade é separada por um sinal de ponto e vírgula ";" da
+    seguinte maneira:
+    color: blue;
+    background-color: yellow;
+    O elemento que receber essas propriedades será exibido com o texto na cor azul e com o fundo
+    amarelo. Essas propriedades podem ser declaradas de três maneiras diferentes. -->
+
+    <!-- Atributo style -->
+    <!-- A primeira delas é com o atributo style no próprio elemento: -->
+    <p style="color: blue; background-color: yellow;">
+        O conteúdo desta tag será exibido em azul com fundo amarelo no navegador!
+        </p>
+
+    <!-- A tag style -->
+    <!-- A outra maneira de se utilizar o CSS é declarando suas propriedades dentro de uma tag <style> .
+
+        Como estamos declarando as propriedades visuais de um elemento em outro lugar do nosso
+        documento, precisamos indicar de alguma maneira a qual elemento nos referimos. Fazemos isso
+        utilizando um seletor CSS. É basicamente uma forma de buscar certos elementos dentro da página que
+        receberão as regras visuais que queremos.
+        No exemplo a seguir, usaremos o seletor que pega todas as tags p e altera sua cor e background: -->
+        <p>
+            O conteúdo desta tag será exibido em azul com fundo amarelo!
+            </p>
+            <p>
+            <strong>Também</strong> será exibido em azul com fundo amarelo!
+        </p>
+    <!-- *Verificar tag style no head do documento html -->
 
 
 
@@ -84,7 +161,7 @@ um elemento está dentro dessa estrutura ou depois dela. -->
     <!-- exibe o texto dentro da tag <strong> em negrito -->
     <!-- o texto dentro da tag <em> em itálico. -->
     <!-- as tags <b> e <i> , que atingem o mesmo resultado visualmente,
-                        mas as tags <strong> e <em> são mais indicadas por definirem nossa intenção de significado ao conteúdo, 
+                        mas as tags <strong> e <em> são mais indicadas por definirem nossa intenção de significado ao conteúdo,
                             mais do que uma simples indicação visual. -->
     <p>Aprenda de um jeito rápido e barato na <strong>MusicDot</strong>.</p>
 
