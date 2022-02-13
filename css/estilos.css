@@ -94,8 +94,50 @@ h1 {
     border-right: 1px solid red; /* borda vermelha à direita */
     border-bottom: 1px solid red; /* borda vermelha embaixo */
     border-left: 1px solid red; /* borda vermelha à esquerda */
+    
+    /* Usando o nome da cor: */
+    color: red;
 }
     
-/* h2 {
-font-family: sans-serif;
-} */
+h2 {
+/* font-family: sans-serif; */
+   
+    /* Usando o nome da cor: */
+    background-color: yellow;
+}
+
+h3 {
+       /* A W3C obriga que todos os navegadores tenham pelo menos
+       140 nomes de cores padronizados, mas existem mais de 16 milhões de cores na web e seria
+       extremamente complicado nomear cada uma delas. */
+       
+    /* Usando RGB (um vermelho, um verde e um azul) - a combinação dessas 3 cores formam todas as outras 16 milhões de
+       cores que vemos nos monitores. Podemos escolher a intensidade de cada um desses três leds básicos,
+       numa escala de 0 a 255.
+    Essa sintaxe funciona nos browsers mais modernos e até alguns browsers super antigos mas não é a
+    mais comum na prática, por questões de compatibilidade. O mais comum é a notação hexadecimal.
+    Essa sintaxe tem suporte universal nos navegadores e é mais curta de escrever, apesar de ser mais
+    enigmática. 
+    Um amarelo forte, por exemplo, tem 255 de Red, 255 de Green e 0 de Blue (255, 255, 0). Se quiser
+    um laranja, basta diminuir um pouco o verde (255, 200, 0). E assim por diante. */    
+    color: rgb(255, 200, 0);
+
+    /* Usando a notação hexadecimal */
+    /* No fundo, porém, as duas formas são baseadas no sistema RGB. Na notação hexadecimal (que
+       começa com #), temos 6 caracteres, os primeiros 2 indicam o canal Red, os dois seguintes, o Green, e os
+       dois últimos, Blue; ou seja, RGB. E usamos a matemática pra escrever menos, trocando a base numérica
+       de decimal para hexadecimal.
+       Na base hexadecimal, os algarismos vão de zero a quinze (ao invés do zero a nove da base decimal
+       comum). Para representar os algarismos de dez a quinze, usamos letras de A a F. Nessa sintaxe, portanto,
+       podemos utilizar números de 0-9 e letras de A-F.
+       Há uma conta por trás dessas conversões, mas seu editor de imagens deve ser capaz de fornecer
+       ambos os valores para você sem problemas. 
+       Um valor 255 vira FF na notação hexadecimal. A cor
+       #f2eded, por exemplo, é equivalente a rgb(242, 237, 237), um cinza claro. */
+    background-color: #f2eded;
+    /* Vale aqui uma dica quanto ao uso de cores hexadecimais, toda vez que os caracteres presentes na
+       composição da base se repetirem, estes podem ser simplificados. Então um número em hexadecimal
+       3366ff, pode ser simplificado para 36f.
+       Obs: os 3 pares de números devem ser iguais entre si, ou seja, se tivermos um hexadecimal #33aabc
+       não podemos simplificar nada do código. */
+}
