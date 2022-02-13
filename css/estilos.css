@@ -1,8 +1,73 @@
 /* Dentro do arquivo estilos.css colocamos apenas o conteúdo do CSS: */
 
+body {
+        /* Da mesma maneira que alteramos cores, podemos alterar o texto. Podemos definir fontes com o uso
+        da propriedade font-family . */
+
+        /* A propriedade font-family pode receber seu valor com ou sem aspas dependendo da sua
+        composição, por exemplo, quando uma fonte tem o nome separado por espaço.
+        Por padrão, os navegadores mais conhecidos exibem texto em um tipo que conhecemos como
+        "serif". As fontes mais conhecidas (e comumente utilizadas como padrão) são "Times" e "Times New
+        Roman", dependendo do sistema operacional. Elas são chamadas de fontes serifadas pelos pequenos
+        ornamentos em suas terminações.
+
+        Podemos alterar a família de fontes que queremos utilizar em nosso documento para a família "sansserif"
+        (sem serifas), que contém, por exemplo, as fontes "Arial" e "Helvetica". Podemos também
+        declarar que queremos utilizar uma família de fontes "monospace" como, por exemplo, a fonte
+        "Courier".
+
+        Obs: Fontes monospace podem ser tanto com serifa ou sem serifa. Monospace quer dizer apenas
+        que todas as letras possuem o mesmo tamanho */
+
+        /* Em nosso projeto, as fontes não têm ornamentos, vamos declarar essa propriedade para todo o
+           documento por meio do seu elemento body. 
+        
+        O navegador verificará se a fonte "Helvetica" está disponível e a utilizará para exibir os
+        textos de todos os elementos do nosso documento que, por cascata, herdarão essa propriedade do
+        elemento body .
+
+        Caso a fonte "Helvetica" não esteja disponível, o navegador verificará a disponibilidade da próxima
+        fonte declarada, no nosso exemplo a "Lucida Grande". 
+        
+        Caso o navegador não encontre também essa
+        fonte, ele solicita qualquer fonte que pertença à família "sans-serif", declarada logo a seguir, e a utiliza
+        para exibir o texto, não importa qual seja ela. */
+
+        font-family: "Helvetica", "Lucida Grande", sans-serif;
+
+        /* Temos outras propriedades para manipular a fonte, como a propriedade font-style , que define o
+        estilo da fonte que pode ser: normal (normal na vertical), italic (inclinada) e oblique (oblíqua). */
+    }
+
 /*seletor*/
 p {
     /* propriedade: valor; */
     color: blue;
     background-color: yellow;
+
+    /* font-family: monospace; */
+
+    /* Vamos mudar o alinhamento do texto com a propriedade text-align . */
+
+    /* O exemplo determina que todos os parágrafos da nossa página tenham o texto alinhado para a
+    direita. Também é possível determinar que um elemento tenha seu conteúdo alinhado ao centro ao
+    definirmos o valor center para a propriedade text-align , ou então definir que o texto deve ocupar
+    toda a largura do elemento aumentando o espaçamento entre as palavras com o valor justify . Por
+    padrão o texto é alinhado à esquerda, com o valor left , porém é importante lembrar que essa
+    propriedade propaga-se em cascata. */
+    text-align: right;
+
+    /* É possível configurar também uma série de espaçamentos de texto com o CSS: */
+    line-height: 3px; /* tamanho da altura de cada linha */
+    letter-spacing: 3px; /* tamanho do espaço entre cada letra */
+    word-spacing: 5px; /* tamanho do espaço entre cada palavra */
+    text-indent: 30px; /* tamanho da margem da primeira linha do texto */
 }
+
+/* h1 {
+    font-family: serif;
+    }
+    
+h2 {
+font-family: sans-serif;
+} */
