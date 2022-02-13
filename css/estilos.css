@@ -1,6 +1,9 @@
 /* Dentro do arquivo estilos.css colocamos apenas o conteúdo do CSS: */
 
 body {
+    /* deixando o fundo amarelo ouro */
+    background-color: gold;
+
         /* Da mesma maneira que alteramos cores, podemos alterar o texto. Podemos definir fontes com o uso
         da propriedade font-family . */
 
